@@ -46,7 +46,9 @@ main section.section1 {
     h1 {
         font-size: 2.5rem;
         font-weight: bold;
+        text-align: center;
         color: $colorLetra1;
+        padding: 0px 20px 10px 20px;
         span {
             color: $colorBotones;
         }
@@ -56,8 +58,42 @@ main section.section1 {
         color: $colorLetra1;
         width: 220px;
         height: 61px;
+        border: 0;
         border-radius: 5px;
         font-size: 1.3rem;
+        margin-top: 30px;
+    }
+}
+main section.section2 {
+    @extend .section1;
+    background-image: none;
+    background-color: $colorFondoMain;
+    height: 1200px;
+    justify-content: space-around;
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+        width: 240px;
+        height: 320px;
+        border-radius: 5px;
+        hr {
+            width: 100%;
+            color: rgba(34, 34, 34, 1);
+
+        }
+        div {
+            align-self: flex-start;
+            padding: 10px;
+            font-weight: bold;
+            p {
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }
 

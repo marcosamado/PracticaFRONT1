@@ -35,7 +35,7 @@ header div.hamburguesa {
   padding: 15px;
 }
 
-main section.section1 {
+main section.section1, main section.section2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,21 +43,52 @@ main section.section1 {
   height: 512px;
   background-image: url(../img/background\ main.png);
 }
-main section.section1 h1 {
+main section.section1 h1, main section.section2 h1 {
   font-size: 2.5rem;
   font-weight: bold;
+  text-align: center;
   color: white;
+  padding: 0px 20px 10px 20px;
 }
-main section.section1 h1 span {
+main section.section1 h1 span, main section.section2 h1 span {
   color: #D01418;
 }
-main section.section1 button {
+main section.section1 button, main section.section2 button {
   background-color: #D01418;
   color: white;
   width: 220px;
   height: 61px;
+  border: 0;
   border-radius: 5px;
   font-size: 1.3rem;
+  margin-top: 30px;
 }
 
-/*# sourceMappingURL=style.css.map */
+main section.section2 {
+  background-image: none;
+  background-color: #F3F3F3;
+  height: 1200px;
+  justify-content: space-around;
+}
+main section.section2 article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  width: 240px;
+  height: 320px;
+  border-radius: 5px;
+}
+main section.section2 article hr {
+  width: 100%;
+  color: rgb(34, 34, 34);
+}
+main section.section2 article div {
+  align-self: flex-start;
+  padding: 10px;
+  font-weight: bold;
+}
+main section.section2 article div p span {
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
