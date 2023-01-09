@@ -35,42 +35,48 @@ header div.hamburguesa {
   padding: 15px;
 }
 
-main section.section1, main section.section2 {
+main section.section1, main section.section2, main section.section3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 512px;
   background-image: url(../img/background\ main.png);
+  background-repeat: no-repeat;
 }
-main section.section1 h1, main section.section2 h1 {
+main section.section1 h1, main section.section2 h1, main section.section3 h1 {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   color: white;
   padding: 0px 20px 10px 20px;
 }
-main section.section1 h1 span, main section.section2 h1 span {
+main section.section1 h1 span, main section.section2 h1 span, main section.section3 h1 span {
   color: #D01418;
 }
-main section.section1 button, main section.section2 button {
+main section.section1 button, main section.section2 button, main section.section3 button {
   background-color: #D01418;
   color: white;
   width: 220px;
   height: 61px;
   border: 0;
+  font-weight: 500;
   border-radius: 5px;
   font-size: 1.3rem;
   margin-top: 30px;
 }
 
-main section.section2 {
+main section.section2, main section.section3 {
   background-image: none;
   background-color: #F3F3F3;
   height: 1200px;
   justify-content: space-around;
 }
-main section.section2 article {
+main section.section2 h2, main section.section3 h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+main section.section2 article, main section.section3 article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,15 +86,87 @@ main section.section2 article {
   height: 320px;
   border-radius: 5px;
 }
-main section.section2 article hr {
+main section.section2 article hr, main section.section3 article hr {
   width: 100%;
   color: rgb(34, 34, 34);
 }
-main section.section2 article div {
+main section.section2 article div, main section.section3 article div {
   align-self: flex-start;
   padding: 10px;
-  font-weight: bold;
 }
-main section.section2 article div p span {
+main section.section2 article div .precio, main section.section3 article div .precio {
   font-size: 20px;
-}/*# sourceMappingURL=style.css.map */
+  font-weight: 400;
+}
+main section.section2 article div .cuotas, main section.section3 article div .cuotas {
+  font-size: 13px;
+  font-weight: 400;
+}
+main section.section2 article div .envio, main section.section3 article div .envio {
+  color: #619D00;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+main section.section3 {
+  justify-content: space-around;
+  height: 380px;
+}
+main section.section3 article.producto1 {
+  width: 288px;
+  height: 108px;
+  background-image: url(../img/banner\ 1.png);
+  background-repeat: no-repeat;
+}
+main section.section3 article.producto1 p {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 150px;
+}
+main section.section3 article.producto2 {
+  width: 288px;
+  height: 108px;
+  background-image: url(../img/banner\ 2.png);
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+main section.section3 article.producto2 p {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 150px;
+}
+
+footer {
+  height: auto;
+}
+footer div.position {
+  height: 190px;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+footer div.position p {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+}
+footer div.position div.redes {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+}
+footer p.derechos {
+  height: 25px;
+  color: black;
+  background-color: #C4C4C4;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

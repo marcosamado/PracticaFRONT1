@@ -43,9 +43,10 @@ main section.section1 {
     align-items: center;
     height: 512px;
     background-image: url(../img/background\ main.png);
+    background-repeat: no-repeat;
     h1 {
         font-size: 2.5rem;
-        font-weight: bold;
+        font-weight: 700;
         text-align: center;
         color: $colorLetra1;
         padding: 0px 20px 10px 20px;
@@ -59,6 +60,7 @@ main section.section1 {
         width: 220px;
         height: 61px;
         border: 0;
+        font-weight: 500;
         border-radius: 5px;
         font-size: 1.3rem;
         margin-top: 30px;
@@ -70,6 +72,10 @@ main section.section2 {
     background-color: $colorFondoMain;
     height: 1200px;
     justify-content: space-around;
+    h2 {
+        font-size: 30px;
+        font-weight: 400;
+    }
     article {
         display: flex;
         flex-direction: column;
@@ -82,20 +88,90 @@ main section.section2 {
         hr {
             width: 100%;
             color: rgba(34, 34, 34, 1);
-
         }
         div {
             align-self: flex-start;
             padding: 10px;
-            font-weight: bold;
-            p {
-                span {
-                    font-size: 20px;
-                }
+            .precio {
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .cuotas {
+                font-size: 13px;
+                font-weight: 400;
+            }
+            .envio {
+                color: #619D00;
+                font-size: 10px;
+                font-weight: 400;
             }
         }
     }
 }
+main section.section3 {
+    @extend .section2;
+    justify-content: space-around;
+    height: 380px;
+    h2 {
+        // margin-top: 50px;
+    }
+    article.producto1 {
+        width: 288px;
+        height: 108px;
+        background-image: url(../img/banner\ 1.png);
+        background-repeat: no-repeat;
+        p {
+            color: $colorLetra1;
+            font-size: 15px;
+            font-weight: 400;
+            padding-left: 150px;
+        }
+    }
+    article.producto2 {
+        width: 288px;
+        height: 108px;
+        background-image: url(../img/banner\ 2.png);
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+        p {
+            color: $colorLetra1;
+            font-size: 15px;
+            font-weight: 400;
+            padding-left: 150px;
+        }
+    }
+}
+footer {
+    height: auto;
+    div.position {
+        height: 190px;  
+        background-color: $color-header;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        p {
+            color: $colorLetra1;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        div.redes {
+            display: flex;
+            justify-content: space-between;
+            width: 170px;
+        }
+    }
+    p.derechos {
+        height: 25px;
+        color: $colorLetra2;
+        background-color: #C4C4C4;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        padding: 5px;
+    }
+}
+
 
 
 
