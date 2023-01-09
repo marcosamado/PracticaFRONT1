@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="completar" method="post">
+        <div>
+            <label for="nombre">NOMBRE:</label>
+            <input type="text" name="nombre" id="name" required placeholder="Ej: Juan Perez">
+        </div>
+        <div>
+            <label for="Contraseña">CONTRASEÑA:</label>
+            <input type="password" name="pass" id="password" required>
+        </div>
+        <div>    
+            <label for="Email">MAIL: </label>
+            <input type="email" name="mail" id="mail" required>
+        </div>
+        <div>    
+            <label for="Telefono">TELEFONO:</label>
+            <input type="tel" name="telefono" id="tel">
+        </div>
+        
+        <div>    
+            <label for="seleccionarGenero">GENERO:</label>
+            <select name="Genero" id="genero">
+                <option value="Fem">Femenino</option>
+                <option value="Masc">Masculino</option>
+            </select>
+        </div>
+        <div>
+            <label for="cajaComentario">COMENTARIOS:</label>
+            <textarea name="comentarios" id="coment" cols="15" rows="5"></textarea>
+        </div>
+        <div>
+            <button type="submit">ENVIAR</button>
+            <button type="reset">BORRAR</button>
+        </div>
+        <div>
+            <label>
+                <label for="pregunta">Rigo es adoptado?</label>
+                <input type="radio" name="respuesta">
+                SI
+                <input type="radio" name="respuesta">
+                NO
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="Listar" value="Efectivo">
+                    rigo tonton.         
+            </label>
+            <label>
+                <input type="checkbox" name="Listar">
+                Rosita es Fiera              
+            </label>
+            <label>
+                <input type="checkbox" name="Listar">
+                Chonejo es un groso            
+            </label>
+        </div>
+        <div>
+            <input type="date" name="fechaNacimiento" value="1989-11-13">
+        </div>
+        <div>
+            <input type="file" name="imagenPerfil">
+        </div>
+    </form>
+</body>
+</html>

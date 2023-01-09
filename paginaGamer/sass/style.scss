@@ -1,0 +1,65 @@
+@import "variables.scss", "mixins.scss";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    // border: red solid 1px;
+}
+body {
+    font-family: Roboto, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: $color-header;
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        display: none;
+        justify-content: space-evenly;
+        color: $colorLetra1;
+        font-size: 1rem;
+        font-weight: 600;
+        list-style: none;
+        padding: 40px 20px 20px 0px;
+        margin-left: 50vw;
+        width: 30vw;
+    }
+    div.carrito {
+        display: none;
+        padding-top: 40px;
+    }
+    div {
+        padding: 2vw;
+    }
+    div.hamburguesa {
+        // display: none;
+        padding: 15px;
+    }
+}
+main section.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 512px;
+    background-image: url(../img/background\ main.png);
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $colorLetra1;
+        span {
+            color: $colorBotones;
+        }
+    }
+    button {
+        background-color: $colorBotones;
+        color: $colorLetra1;
+        width: 220px;
+        height: 61px;
+        border-radius: 5px;
+        font-size: 1.3rem;
+    }
+}
+
+
+
