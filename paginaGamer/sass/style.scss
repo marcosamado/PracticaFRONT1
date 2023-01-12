@@ -13,7 +13,6 @@ header {
     display: flex;
     justify-content: space-between;
     ul {
-        display: flex;
         display: none;
         justify-content: space-evenly;
         color: $colorLetra1;
@@ -21,7 +20,7 @@ header {
         font-weight: 600;
         list-style: none;
         padding: 40px 20px 20px 0px;
-        margin-left: 50vw;
+        margin-left: 40vw;
         width: 30vw;
     }
     div.carrito {
@@ -32,9 +31,16 @@ header {
         padding: 2vw;
     }
     div.hamburguesa {
-        // display: none;
         padding: 15px;
     }
+}
+main h2 {
+    background-color: $colorFondoMain;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 main section.section1 {
     display: flex;
@@ -72,10 +78,7 @@ main section.section2 {
     background-color: $colorFondoMain;
     height: 1200px;
     justify-content: space-around;
-    h2 {
-        font-size: 30px;
-        font-weight: 400;
-    }
+    
     article {
         display: flex;
         flex-direction: column;
@@ -112,9 +115,7 @@ main section.section3 {
     @extend .section2;
     justify-content: space-around;
     height: 380px;
-    h2 {
-        // margin-top: 50px;
-    }
+    padding-bottom: 30px;
     article.producto1 {
         width: 288px;
         height: 108px;
@@ -132,7 +133,6 @@ main section.section3 {
         height: 108px;
         background-image: url(../img/banner\ 2.png);
         background-repeat: no-repeat;
-        margin-bottom: 30px;
         p {
             color: $colorLetra1;
             font-size: 15px;
@@ -157,8 +157,16 @@ footer {
         }
         div.redes {
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: space-between;
-            width: 170px;
+            width: 250px;
+            div.logos-redes {
+                margin-top: 15px;
+                width: 170px;
+                display:flex;
+                justify-content: space-between;
+            }
         }
     }
     p.derechos {
@@ -171,6 +179,50 @@ footer {
         padding: 5px;
     }
 }
+
+@media (min-width: 425px){
+    main section.section1 {
+        background-image: url(../img/fondodesktop.png);
+        background-size: cover;
+    }
+    main section.section2 {
+        background-image: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        ul {
+            display: flex;
+        }
+        div.carrito {
+            display: block;
+        }
+        div.hamburguesa {
+            display: none;
+        }
+    }
+    main section.section2 {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 500px;
+    }
+    main section.section3 {
+        height: 250px;
+    }
+    footer {
+        div.position {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0px 50px 0px 50px;
+        }
+        p.derechos {
+            height: 30px;
+            font-size: 15px;
+        }
+    }
+}
+
 
 
 
