@@ -22,10 +22,21 @@ header ul {
   padding: 40px 20px 20px 0px;
   margin-left: 40vw;
   width: 30vw;
+  transition: 5ms all ease-in-out;
+}
+header ul li:hover {
+  cursor: pointer;
+  color: #D01418;
+  transform: scale(1.1);
 }
 header div.carrito {
   display: none;
   padding-top: 40px;
+  transition: 100ms all ease-in;
+}
+header div.carrito:hover {
+  cursor: pointer;
+  background-color: white;
 }
 header div {
   padding: 2vw;
@@ -72,6 +83,12 @@ main section.section1 button, main section.section2 button, main section.section
   border-radius: 5px;
   font-size: 1.3rem;
   margin-top: 30px;
+  transition: 100ms all ease-in-out;
+}
+main section.section1 button:hover, main section.section2 button:hover, main section.section3 button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 2px rgb(255, 255, 255);
 }
 
 main section.section2, main section.section3 {
@@ -89,10 +106,13 @@ main section.section2 article, main section.section3 article {
   width: 240px;
   height: 320px;
   border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
+  transition: 100ms all ease-in-out;
 }
 main section.section2 article hr, main section.section3 article hr {
   width: 100%;
   color: rgb(34, 34, 34);
+  box-shadow: 0px 0px 1px 1px rgb(0, 0, 0);
 }
 main section.section2 article div, main section.section3 article div {
   align-self: flex-start;
@@ -110,6 +130,11 @@ main section.section2 article div .envio, main section.section3 article div .env
   color: #619D00;
   font-size: 10px;
   font-weight: 400;
+}
+main section.section2 article:hover, main section.section3 article:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 main section.section3 {
@@ -167,6 +192,7 @@ footer div.position div.redes {
 }
 footer div.position div.redes div.logos-redes {
   margin-top: 15px;
+  padding-top: 2px;
   width: 170px;
   display: flex;
   justify-content: space-between;
